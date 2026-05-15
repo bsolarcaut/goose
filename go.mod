@@ -29,3 +29,5 @@ require (
 //     dropped once multierr upgrades to use sync/atomic from stdlib
 //   - TODO: experiment with replacing go.uber.org/multierr with stdlib errors
 //     joining (errors.Join added in go1.20) once upstream drops the uber dep
+//   - TODO: try bumping go directive to 1.22 to see if anything breaks;
+//     upstream still targets 1.21 but my local toolchain is 1.22
