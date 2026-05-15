@@ -31,3 +31,5 @@ require (
 //     joining (errors.Join added in go1.20) once upstream drops the uber dep
 //   - TODO: try bumping go directive to 1.22 to see if anything breaks;
 //     upstream still targets 1.21 but my local toolchain is 1.22
+//   - NOTE: stretchr/testify and goleak should be in a separate require block
+//     marked as test-only; worth filing an upstream issue or sending a PR
