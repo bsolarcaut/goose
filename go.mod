@@ -22,3 +22,8 @@ require (
 
 // personal fork - tracking upstream pressly/goose for learning purposes
 // upstream: https://github.com/pressly/goose
+//
+// Notes:
+//   - studying how goose handles migration versioning and locking
+//   - go.uber.org/atomic is a transitive dep from multierr; can likely be
+//     dropped once multierr upgrades to use sync/atomic from stdlib
