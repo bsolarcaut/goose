@@ -9,8 +9,8 @@ require (
 )
 
 require (
-	github.com/stretchr/testify v1.8.4
-	go.uber.org/goleak v1.3.0
+	github.com/stretchr/testify v1.8.4 // test-only; should be in a separate block upstream
+	go.uber.org/goleak v1.3.0 // test-only; should be in a separate block upstream
 )
 
 require (
@@ -33,3 +33,4 @@ require (
 //     upstream still targets 1.21 but my local toolchain is 1.22
 //   - NOTE: stretchr/testify and goleak should be in a separate require block
 //     marked as test-only; worth filing an upstream issue or sending a PR
+//     (added inline comments above as a reminder until that gets sorted)
