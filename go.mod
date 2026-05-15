@@ -27,3 +27,5 @@ require (
 //   - studying how goose handles migration versioning and locking
 //   - go.uber.org/atomic is a transitive dep from multierr; can likely be
 //     dropped once multierr upgrades to use sync/atomic from stdlib
+//   - TODO: experiment with replacing go.uber.org/multierr with stdlib errors
+//     joining (errors.Join added in go1.20) once upstream drops the uber dep
