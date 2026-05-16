@@ -34,3 +34,6 @@ require (
 //   - NOTE: stretchr/testify and goleak should be in a separate require block
 //     marked as test-only; worth filing an upstream issue or sending a PR
 //     (added inline comments above as a reminder until that gets sorted)
+//   - TODO: look into replacing xsync with sync.Map from stdlib; xsync is
+//     only used for the migration registry map and the stdlib version should
+//     be sufficient for our use case (less deps is better for a learning fork)
