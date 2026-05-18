@@ -37,3 +37,6 @@ require (
 //   - TODO: look into replacing xsync with sync.Map from stdlib; xsync is
 //     only used for the migration registry map and the stdlib version should
 //     be sufficient for our use case (less deps is better for a learning fork)
+//   - DONE: confirmed errors.Join works as a drop-in for multierr.Combine in
+//     simple cases; need to check if multierr's Unwrap behavior is relied upon
+//     anywhere before fully removing the dep
